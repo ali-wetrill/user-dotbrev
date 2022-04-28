@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -euo pipefail
+set -eo pipefail
 
 ####################################################################################
 ##### Install VSCode extensions, Linux tools or any other global tooling here. #####
@@ -10,10 +10,6 @@ set -euo pipefail
 ##### The working directory is /home/brev/user-dotbrev. Execution of this file #####
 ##### happens at this level.                                                   #####
 ####################################################################################
-
-##### Essential Linux Installs #####
-(echo ""; echo "##### Essential Linux Installs #####"; echo "";)
-sudo apt-get install -y build-essential
 
 ##### Setting up VSCode defaults #####
 (echo ""; echo "##### Setting up VSCode defaults #####"; echo "";)
@@ -73,6 +69,8 @@ echo "############################" >>~/.bashrc
 echo "" >>~/.bashrc
 echo "zsh" >>~/.bashrc
 source ~/.bashrc
+
+sudo chsh -s /usr/bin/zsh brev
 
 ##### CUSTOM #####
 git config --global pull.ff only

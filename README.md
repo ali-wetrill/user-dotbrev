@@ -1,22 +1,10 @@
-# Brev Setup
+# Personal Settings for Brev.dev
 
-Whenever you create or join a project, your user `.brev` directory runs, applying your user settings to each project.
+Whenever you create or join a project, your user `.brev` directory runs, applying your personal user settings to each project. This includes terminal aliases, VSCode extensions, PS1 modifications etc.
 
-Fork and modify this template to add your own custom user settings to Brev. For project specific settings, see the [project `.brev` template repository](https://github.com/brevdev/default-project-dotbrev).
+Start by forking this repository, then follow the instructions below to modify this template to add your own custom user settings to Brev.dev. Remember to keep user specific settings here, for project specific settings see the [project `.brev` template repository](https://github.com/brevdev/default-project-dotbrev).
 
-## Setup Steps
-
-### 1. VSCode Settings
-A. Replace `.vscode/settings.json` with your personal VSCode `settings.json`.
->To locate your personal VSCode `settings.json`, first open VSCode. Then click Cmd+Shft+P (Ctrl+Shft+P for Windows) and type `Preferences: Open Settings (JSON)`.
-
-B. Open `.brev/setup.sh` and add your VSCode extensions.
->To find an extension id, click the settings icon on any extension card and click `Copy Extension ID`
-><div style="text-align:center">
->  <img src="https://i.ibb.co/JkNsbkR/Screen-Shot-2021-08-01-at-6-36-57-PM.jpg" width="800" title="Example">
-></div>
-
-### 2. Terminal Settings
+## Terminal Settings
 
 A. Replace `.zshrc` with your personal `.zshrc`. If you use bash, replace `.bash_profile` instead!
 >Not sure if you have zsh? Type in `zsh --version` to check. To get your personal terminal settings, type in `cat ~/.zshrc` or `cat ~/.bash_profile`. If you have any files you want to reference in this script, add them to the `.brev/utils` folder and reference them as `/home/brev/workspace/.brev/utils/<FILENAME>`.
@@ -25,7 +13,19 @@ B. If you use bash, comment out the code under `##### MAKE ZSH DEFAULT #####` in
 
 If there are other tools you'd like to install *globally* (this means they are downloaded everytime you create or join a project), add them in `.brev/setup.sh`. For example, this is where we add zsh!
 
-**Done! Happy coding!**
+**Done! Happy coding** 🎉
+
+### Optional: VSCode Settings for Web browser
+This is only for getting your VSCode settings while coding in the browser (accessible through our console). This is not necessary for coding using your local VSCode.
+
+A. Replace `.vscode/settings.json` with your personal VSCode `settings.json`.
+>To locate your personal VSCode `settings.json`, first open VSCode. Then click Cmd+Shft+P (Ctrl+Shft+P for Windows) and type `Preferences: Open Settings (JSON)`.
+
+B. Open `.brev/setup.sh` and add your VSCode extensions.
+>To find an extension id, click the settings icon on any extension card and click `Copy Extension ID`
+><div style="text-align:center">
+>  <img src="https://i.ibb.co/JkNsbkR/Screen-Shot-2021-08-01-at-6-36-57-PM.jpg" width="800" title="Example">
+></div>
 
 ## Repository Contents
 
