@@ -18,12 +18,6 @@ weather() {
     || printf '%s\n' "[ERROR] weather: Could not connect to weather service."
 }
 
-####################
-##### Homebrew #####
-####################
-
-export PATH=/opt/homebrew/bin:$PATH
-
 ##################
 ##### Prompt #####
 ##################
